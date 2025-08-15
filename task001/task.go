@@ -2,7 +2,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 	"strconv"
 )
@@ -207,9 +206,4 @@ func twoSum(nums []int, target int) []int {
 		tempMap[v] = i
 	}
 	return nil
-}
-
-func main() {
-
-	fmt.Println("result")
 }
