@@ -4,7 +4,8 @@ package main
 import (
 	"fmt"
 	// "testproject/task002/goroutine_test"
-	"testproject/task002/objects_test"
+	// "testproject/task002/objects_test"
+	"testproject/task002/channel_test"
 )
 
 func main() {
@@ -14,6 +15,7 @@ func main() {
 	// goroutine_test.TestFirst()
 	// goroutine_test.TestSecond()
 	// objects_test.TestFirst()
-	objects_test.TestSecond()
+	// channel_test.TestFirst()
+	channel_test.TestSecond()
 
 }
