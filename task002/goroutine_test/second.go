@@ -41,13 +41,15 @@ func (ts *TaskScheduler) Run() map[string]time.Duration {
 	for name, task := range ts.tasks {
 		wg.Add(1)
 		go func(name string, task Task) {
-			defer wg.Done()
 
 			start := time.Now()
 			task() // 执行任务函数
 			duration := time.Since(start)
 
 			results <- TaskResult{Name: name, Duration: duration}
+
+			defer wg.Done()
+
 		}(name, task)
 	}
 
