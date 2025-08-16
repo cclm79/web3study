@@ -10,6 +10,7 @@ func main() {
 
 	fmt.Println("result")
 	// ptr.TestSecond()
-	goroutine_test.TestFirst()
+	// goroutine_test.TestFirst()
+	goroutine_test.TestSecond()
 
 }
