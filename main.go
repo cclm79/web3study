@@ -6,7 +6,7 @@ import (
 	// "testproject/task002/goroutine_test"
 	// "testproject/task002/objects_test"
 	// "testproject/task002/channel_test"
-	"testproject/task002/lock_test"
+	// "testproject/task002/lock_test"
 )
 
 func main() {
@@ -20,6 +20,6 @@ func main() {
 	// channel_test.TestSecond()
 	// lock_test.TestFirst()
 
-	lock_test.TestSecond()
+	// lock_test.TestSecond()
 
 }
