@@ -3,12 +3,13 @@ package main
 
 import (
 	"fmt"
-	"testproject/task002/ptr"
+	"testproject/task002/goroutine_test"
 )
 
 func main() {
 
 	fmt.Println("result")
-	ptr.TestFirst()
+	// ptr.TestSecond()
+	goroutine_test.TestFirst()
 
 }
