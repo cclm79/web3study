@@ -13,6 +13,7 @@ func main() {
 	// ptr.TestSecond()
 	// goroutine_test.TestFirst()
 	// goroutine_test.TestSecond()
-	objects_test.TestFirst()
+	// objects_test.TestFirst()
+	objects_test.TestSecond()
 
 }
