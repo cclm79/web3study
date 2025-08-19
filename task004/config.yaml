@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  runMode: debug # release debug
+  logLevel: debug # debug info warn error
+  enabledSwagger: false # 是否开启swagger
+  openapiPath: "/swagger/doc.json"
+  swaggerPath: "/swagger/index.html"
+
+database:
+  primary:
+      type: mysql
+      host: localhost
+      port: 3306
+      username: root
+      password: asdf
+      dbname: blog_db
+  max_idle_conn: 10
+  max_open_conn: 30
+  conn_max_lifetime: 300
+
+
+jwt:
+  secret: 3Bde3BGEbYqtqyEUzW3ry8jKFcaPH17fRmTmqE7MDr05Lwj95uruRKrrkb44TJ4s
+  jwt_ttl: 43200 # 12 * 60 * 60 秒过期
+
+
+log:
+  enabled: false    # 是开启
+  logMode: default # default mysql file es
+  filePath: ./log # 日志本地的话存放地址
+  filterate:   # 日志过滤的接口
+    - '/reg'
+user-password:
+    # 密码最大错误次数
+    maxRetryCount: 5
+    # 密码锁定时间（默认10分钟）
+    lockTime: 10
